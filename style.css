@@ -1,0 +1,63 @@
+body{
+    background: linear-gradient(90deg, rgb(253, 250, 207));
+}
+
+
+::selection{
+    background-color: black;
+}
+
+h1{
+    background-color: rgba(220, 220, 221, 0.459);
+    color: rgb(134, 86, 23);
+    text-align: center;
+}
+
+.header .logo{
+    display: inline;
+    cursor: pointer;
+    margin: 1em 1em 1em 2em;
+}
+
+.header .logo img{
+    height: 10em;
+    width: auto;
+    float: left;
+    margin: 2em;
+    transition: all 0.3s
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links li{
+    display: inline-block;
+    margin: 3em 0.2em;
+    transition: 0.3s ease-in-out 0s;
+}
+
+.header .nav-links a{
+    background-color: #cc9a87;
+    border-radius: 2em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0.5em 1em;
+    margin: 1em 0.2em;
+    transition: 0.3s ease 0s;
+}
+
+.header .nav-links a:hover:not(.active){
+    transform: scale(1.1);
+    color:#5e2504c9;
+}
+
+.header .nav-links a.active{
+    background-color: #f7f58bc9;
+    color: #cc9a87;
+}
+
+.header .nav-links li:hover:not(.activo){
+    transform: scale(1.1);
+}

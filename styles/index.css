@@ -1,0 +1,36 @@
+
+
+.panel{
+    background: linear-gradient(90deg, rgb(196, 142, 26));
+    padding: 5em;
+    padding-top: 3em;
+    margin-top: 4em;
+    border-radius: 0.5em;
+    border: 1px solid rgb(228, 96, 96);
+    float: left;
+}
+
+.panel > h2{
+    background-color: rgba(220, 220, 221, 0.459);
+    margin-top: 0;
+    padding: 0 1em 0 1em;
+    border-radius: 1em;
+    font-size: 3em;
+    color: rgb(134, 86, 23);
+}
+
+.cuerpoPanel{
+    font-size: 2em;
+    color: rgb(235, 204, 164);
+}
+
+.cuerpoPanel div{
+    margin-bottom: 2em;
+}
+span button{
+    font-size: 1.5rem;
+    color: antiquewhite;
+    background-color: #4d2597;
+    border-radius: 0.5em;
+    margin-left: 35%;
+}

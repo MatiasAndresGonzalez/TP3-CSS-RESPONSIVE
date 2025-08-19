@@ -3,19 +3,19 @@
     --color-fondo-general: rgba(220, 220, 221, 0.459);
     --texto-fondo-oscuro: rgb(219, 219, 219);
     --boton-bg: #6e5896;
+    --boton-bg-hover: #604b86;
 }
 
 .hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    float: left;
+    display: block;
     width: 70vw;
     margin-left: 2rem;
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     padding: 5em;
     padding-top: 1em;
     margin-top: 1em;
@@ -56,11 +56,102 @@
 }
 
 .boton{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    padding: 0.3rem;
+    padding: 0.5rem;
+    margin: 0 4rem;
     color: var(--texto-fondo-oscuro);
     background-color: var(--boton-bg);
     border-radius: 0.5rem;
     border: 0.5px solid rgb(124, 123, 123);
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.boton:hover{
+    background-color: var(--boton-bg-hover);
+}
+
+#menu-cafe{
+    background-color: var(--color-fondo-general);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#menu-cafe h2{
+    margin-top: 0;
+    font-size: 1.8em;
+    color: var(--color-texto-general);
+    font-weight: bold;
+}
+
+#menu-cafe h3{
+    font-size: 1.4em;
+}
+
+#menu-cafe .container2{
+    padding: 50px 0;
+    color: var(--texto-fondo-oscuro);
+}
+
+#menu-cafe p{
+    display: none;
+}
+
+#menu-cafe .carta{
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/expreso.webp);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/ristretto.webp);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/macchiato.webp);
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/latte_macchiato.webp);
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/cafe_con_leche.webp);
+}
+
+.carta:last-child{
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/cappuccino.webp);
 }

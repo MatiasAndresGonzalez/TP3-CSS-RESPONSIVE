@@ -82,6 +82,10 @@ a:hover{
     height: 81vh;
 }
 
+.container{
+    margin-left: 2rem;
+}
+
 @media (min-width: 800px){
     .menu{
         display: none;
@@ -129,13 +133,13 @@ a:hover{
         text-shadow: 0 0 10px white;
     }
     
-.hero{
-    margin-top: 1.5rem;
-}
+    .hero{
+    margin-top: 2.5rem;
+    }
 }
 
 @media (min-width: 1200px){
     .hero{
-        margin-top: 0.8rem;
+        margin-top: 2.5rem;
     }
 }

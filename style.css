@@ -26,7 +26,7 @@ h1{
     cursor: pointer;
 }
 
-a{
+.header .nav-links a{
     display: flex;
     text-decoration: none;
     color: var(--color-texto-general);
@@ -40,7 +40,7 @@ a{
     transition: all .3s;
 }
 
-a:hover{
+.header .nav-links a:hover{
     background-color:antiquewhite;
 }
 
@@ -142,4 +142,11 @@ a:hover{
     .hero{
         margin-top: 2.5rem;
     }
+}
+
+.footer{
+    font-size: 1.3rem;
+    color: var(--color-texto-general);
+    font-weight: bold;
+    text-align: center;
 }

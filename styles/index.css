@@ -9,14 +9,15 @@
 .hero{
     display: block;
     width: 70vw;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 5em;
+    justify-items: center;
+    padding: 3em 0;
     padding-top: 1em;
     margin-top: 1em;
     background-image: linear-gradient( 
@@ -68,6 +69,12 @@
     transition: all ease .2s;
 }
 
+.esta-no{
+    text-decoration: none;
+    color: var(--texto-fondo-oscuro);
+    cursor: pointer;
+}
+
 .boton:hover{
     background-color: var(--boton-bg-hover);
 }
@@ -80,13 +87,13 @@
 
 #menu-cafe h2{
     margin-top: 0;
-    font-size: 1.8em;
+    font-size: 2.5em;
     color: var(--color-texto-general);
     font-weight: bold;
 }
 
 #menu-cafe h3{
-    font-size: 1.4em;
+    font-size: 1.8em;
 }
 
 #menu-cafe .container2{
@@ -99,7 +106,11 @@
 }
 
 #menu-cafe .carta{
-
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 0.4rem;
 }
 
 .carta:first-child{

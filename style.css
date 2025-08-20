@@ -45,6 +45,7 @@ h1{
 }
 
 .nav-links li{
+    display: flex;
     list-style-type: none;
     margin-bottom: 1rem;
 }
@@ -84,6 +85,13 @@ h1{
 
 .container{
     margin-left: 2rem;
+}
+
+.footer{
+    font-size: 1.3rem;
+    color: var(--color-texto-general);
+    font-weight: bold;
+    text-align: center;
 }
 
 @media (min-width: 800px){
@@ -132,21 +140,4 @@ h1{
         color: var(--color-texto-general);
         text-shadow: 0 0 10px white;
     }
-    
-    .hero{
-    margin-top: 2.5rem;
-    }
-}
-
-@media (min-width: 1200px){
-    .hero{
-        margin-top: 2.5rem;
-    }
-}
-
-.footer{
-    font-size: 1.3rem;
-    color: var(--color-texto-general);
-    font-weight: bold;
-    text-align: center;
 }

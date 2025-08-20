@@ -1,0 +1,60 @@
+:root{
+    --color-texto-general: rgb(134, 86, 23);
+    --color-fondo-general: rgba(220, 220, 221, 0.459);
+    --texto-fondo-oscuro: rgb(219, 219, 219);
+    --boton-bg: #6e5896;
+    --boton-bg-hover: #604b86;
+}
+
+#promociones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: auto;
+    padding: 2rem 0 0 0;
+    color: var(--color-texto-general);
+    background-color: var(--color-fondo-general);
+}
+
+#promociones .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    display: block;
+}
+
+#promociones .promo{
+    width: 70vw;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0 30px;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-size: 50%;
+}
+
+#promociones .promo:first-child{
+    background-image: url(/assets/img/espresso\ promo.webp);
+    background-position: right;
+    background-repeat: no-repeat;
+    /* background-size: 50%; */
+}
+
+#promociones .promo:nth-child(2){
+    background-image: url(/assets/img/caf\ con\ le\ +\ late\ macc\ promo.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    /* background-size: 75%; */
+}
+
+#promociones .promo:nth-child(3){
+    background-image: url(/assets/img/capuccino\ promo.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    /* background-size: 75%; */
+}

@@ -211,10 +211,6 @@
         background-color: var(--color-fondo-general);
         box-shadow: 2px 2px 4px gray;
     }
-
-    #menu-cafe .boton{
-        display: none;
-    }
 }
 
 @media (min-width: 1200px){
@@ -237,9 +233,5 @@
         width: 28%;
         height: auto;
 
-    }
-    
-    #menu-cafe .boton{
-        display: none;
     }
 }

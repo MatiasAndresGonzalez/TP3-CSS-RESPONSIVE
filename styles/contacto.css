@@ -6,42 +6,31 @@
     --boton-bg-hover: #604b86;
 }
 
-.grilla{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(75%, 30ch), 1fr));
-    grid-gap: 10px;
-    margin-top: 2rem;
-}
-
-.grilla .flex{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex > div{
-    flex: 1 1 10ch;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.texto{
-    display: flex;
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding: 0.5rem 0.5rem;
-    margin: 0.5rem;
+h2{
+    font-size: 2.1rem;
     color: var(--color-texto-general);
     text-align: center;
-    background: var(--color-fondo-general);
-    border: 2px solid rgb(156, 154, 154);
-    border-radius: 0.5rem;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-texto-general);
+    text-align: center;
+    background-color: var(--color-fondo-general);
+    border-radius: 0.6rem;
+    margin: 1rem;
 }
 
 .boton{
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 0.5rem;
-    margin: 0 4rem;
+    padding: 0.4rem;
+    margin: 0.3rem 1rem;
     color: var(--texto-fondo-oscuro);
     background-color: var(--boton-bg);
     border-radius: 0.5rem;
@@ -52,4 +41,9 @@
 
 .boton:hover{
     background-color: var(--boton-bg-hover);
+}
+
+input, textarea{
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
 }

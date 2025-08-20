@@ -7,6 +7,7 @@
     <title>Cafetería Montaña</title>
     <link rel="shortcut icon" href="taza-de-cafe.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/contacto.css">
     <script src="https://kit.fontawesome.com/a7f24df966.js" crossorigin="anonymous"></script>
 
 <body>
@@ -37,6 +38,37 @@
     <!-- <div class="logo">
         <img src="/assets/img/logotipo.png" alt="logo de la empresa">
     </div> -->
+
+    <h2>Completa el formulario para contactarnos</h2>
+    <div class="contenedor">
+        <form target="_blank">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" maxlength="45"
+                minlength="5" pattern="[a-zA-Z]{1, 45}" required><br><br>
+
+            <label for="apellido">Apellido</label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido completo" maxlength="45"
+                minlength="5" pattern="[a-zA-Z]{1, 45}" required><br><br>
+
+            <label for="tutorial">Dinos para qué mos contactas.</label><br>
+            <input type="radio" name="tutorial" value="Limpieza de PC">Reclamo
+            <input type="radio" name="tutorial" value="Limpieza de Laptop" required>Agradecimiento
+            <input type="radio" name="tutorial" value="Conocer Otros Tutoriales" required>Conocer sobre café
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Escribe aquí tu email" required>
+            <br><br>
+            <textarea name="comentario" id="comentario"
+                placeholder="Cuentanos tu experiencia con nuestros productos" rows="4"></textarea>
+            <br><br>
+            <div>
+                <input class="boton" type="submit" value="Enviar">
+            </div>
+            <div>
+                <input class="boton" type="reset" value="Resetear">
+            </div>
+
+        </form>
+    </div>
 
 
     <footer>

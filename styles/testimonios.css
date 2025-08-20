@@ -1,0 +1,19 @@
+:root{
+    --color-texto-general: rgb(134, 86, 23);
+    --color-fondo-general: rgba(220, 220, 221, 0.459);
+    --texto-fondo-oscuro: rgb(219, 219, 219);
+    --boton-bg: #6e5896;
+    --boton-bg-hover: #604b86;
+}
+
+.contenedor{
+    margin: 3rem 2rem 2rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-texto-general);
+}
+
+.contenedor > p{
+    background-color: var(--color-fondo-general);
+    border-radius: 0.2rem;
+}

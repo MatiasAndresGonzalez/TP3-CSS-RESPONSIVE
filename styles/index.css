@@ -168,6 +168,16 @@
     url(/assets/img/cappuccino.webp);
 }
 
+.contenedor3{
+    padding: 2rem 3rem;
+    margin: 1rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--color-fondo-general);
+    color: var(--color-texto-general);
+}
+
 @media (min-width: 800px){
     .hero{
     margin-top: 2.5rem;

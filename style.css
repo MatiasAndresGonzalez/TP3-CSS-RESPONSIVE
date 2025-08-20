@@ -93,6 +93,7 @@ h1{
     color: var(--color-texto-general);
     font-weight: bold;
     text-align: center;
+    height: 4vh;
 }
 
 @media (min-width: 800px){

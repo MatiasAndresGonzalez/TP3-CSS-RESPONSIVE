@@ -39,10 +39,12 @@ h1{
     margin: 0.5rem;
     padding: 0.5rem;
     transition: all .3s;
+    cursor: default;
 }
 
-.header .nav-links a:hover{
+.header .nav-links a:hover:not(.active){
     background-color:antiquewhite;
+    cursor: pointer;
 }
 
 .nav-links li{
@@ -81,7 +83,25 @@ h1{
 }
 
 #menu:checked + .nav-links{
-    height: 81vh;
+    height: 100vh;
+}
+
+.logo{
+    display: inline;
+    position: relative;
+    margin: 0 1rem;
+}
+
+.img-logo{
+    width: 10vh;
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    transition: all ease-in-out .3s;
+}
+
+.img-logo:hover{
+    transform: scale(1.1);
 }
 
 .container{

@@ -1,5 +1,5 @@
 :root{
-    --color-texto-general: rgb(134, 86, 23);
+    --color-texto-general: rgb(136, 86, 23);
     --color-fondo-general: rgba(220, 220, 221, 0.459);
     --texto-fondo-oscuro: rgb(219, 219, 219);
     --boton-bg: #6e5896;
@@ -18,10 +18,72 @@
     flex-wrap: wrap;
 }
 
-.flex > div{
+.flex .texto{
     flex: 1 1 10ch;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.img{
+    flex: 1 1 10ch;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.3rem;
+    margin: 0.4rem;
+}
+
+.flex .img:first-child{
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/espresso\ promo.webp);
+}
+
+.flex .img:nth-child(2){
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/caf\ con\ le\ +\ late\ macc\ promo.jpg);
+}
+
+.flex .img:nth-child(3){
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/capuccino\ promo.png);
+}
+
+.flex .img:nth-child(4){
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/macchiato.webp);
+}
+
+.flex .img:nth-child(5){
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/ristretto.webp);
+}
+
+.flex .img:last-child{
+    background-image: linear-gradient( 
+    0deg, 
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/latte_macchiato.webp);
 }
 
 .texto{
@@ -32,7 +94,8 @@
     margin: 0.5rem;
     color: var(--color-texto-general);
     text-align: center;
-    background: var(--color-fondo-general);
+    text-shadow: 2px 2px 2px rgb(196, 196, 196);
+    background: rgba(228, 228, 228, 0.534);
     border: 2px solid rgb(156, 154, 154);
     border-radius: 0.5rem;
 }
@@ -45,9 +108,10 @@
     color: var(--texto-fondo-oscuro);
     background-color: var(--boton-bg);
     border-radius: 0.5rem;
-    border: 0.5px solid rgb(124, 123, 123);
+    border: 0.5px solid rgb(49, 47, 47);
     cursor: pointer;
     transition: all ease .2s;
+    box-shadow: 2px 2px 4px rgb(61, 60, 60);
 }
 
 .boton:hover{

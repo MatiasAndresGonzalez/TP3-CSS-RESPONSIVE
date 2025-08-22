@@ -10,6 +10,7 @@
     display: block;
     width: 70vw;
     margin-left: 1rem;
+    text-shadow: 2px 2px 4px gray;
 }
 
 .container{
@@ -41,7 +42,8 @@
 }
 
 .texto-hero{
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: 700;
     color:  var(--texto-fondo-oscuro);
 }
 
@@ -169,13 +171,32 @@
 }
 
 .contenedor3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem 3rem;
     margin: 1rem 1rem;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
     background-color: var(--color-fondo-general);
-    color: var(--color-texto-general);
+    color: var(--texto-fondo-oscuro);
+    text-shadow: 2px 2px 4px gray;
+}
+
+.contenedor3 .texto{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgb(0, 0, 0, 0.5)
+    ),
+    url(/assets/img/descafeinado_web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1rem;
+    border-radius: 0.3rem;
+    width: 60vw;
+    height: auto;
 }
 
 @media (min-width: 800px){
@@ -200,11 +221,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1.5rem;
-        box-sizing: border-box;
         width: 27%;
         height: auto;
-        padding: 40px 0 0 0;
+        padding: 2rem 0 0.5rem 0;
         background-size: 100% 150px;
         background-repeat: no-repeat;
         background-position-y: 0;
@@ -228,7 +247,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 1.5rem;
+        padding: 1rem;
         box-sizing: border-box;
         width: 28%;
         height: auto;

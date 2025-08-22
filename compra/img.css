@@ -1,0 +1,106 @@
+:root{
+    --color-texto-general: rgb(136, 86, 23);
+    --color-fondo-general: rgba(220, 220, 221, 0.459);
+    --texto-fondo-oscuro: rgb(219, 219, 219);
+    --boton-bg: #6e5896;
+    --boton-bg-hover: #604b86;
+}
+
+body{
+    color: var(--color-texto-general);
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    margin: 0 0.5rem 0.5rem 3.2rem;
+    border-radius: 0.5rem;
+    width: 70vw;
+    height: auto;
+    background-color: rgb(126, 126, 126);
+    box-shadow: 3px -3px 7px rgb(31, 31, 31);
+}
+
+img{
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem;
+}
+
+.contenido{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 2rem 1rem 2rem;
+    margin-top: 0.5rem;
+    background-color: var(--color-fondo-general);
+    border: 5px solid gray;
+    border-radius: 0.4rem;
+    box-shadow: 3px -3px 7px rgb(31, 31, 31);
+}
+
+.contenido p:nth-last-child(2){
+    font-weight: 600;
+}
+
+button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0 4rem;
+    color: var(--texto-fondo-oscuro);
+    background-color: var(--boton-bg);
+    border-radius: 0.5rem;
+    border: 0.5px solid rgb(49, 47, 47);
+    cursor: pointer;
+    transition: all ease .2s;
+    box-shadow: 3px -3px 7px rgb(31, 31, 31);
+}
+
+button:hover{
+    background-color: var(--boton-bg-hover);
+}
+
+@media (min-width: 800px){
+
+    #contenedor{
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.imagen{
+    margin: 0 1rem 0.5rem 1rem;
+    width: 40vw;
+    height: auto;
+    background-color: var(--color-fondo-general);
+    box-shadow: none;
+}
+
+img{
+    box-shadow: 3px 3px 7px rgb(39, 39, 39);
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: initial;
+    max-width: 500px;
+    border: none;
+    background-color: rgba(234, 236, 236, 0);
+    box-shadow: none;
+}
+}
